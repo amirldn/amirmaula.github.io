@@ -31,10 +31,10 @@
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a onClick="document.getElementById('about_me').scrollIntoView();">About Me</a></li>
+                                <li><a onClick="document.getElementById('experience').scrollIntoView();">Experience</a></li>
                                 <li><a onClick="document.getElementById('projects').scrollIntoView();">Projects</a></li>
                                 <li><a onClick="document.getElementById('programming').scrollIntoView();">Programming</a></li>
-                                <li><a onClick="document.getElementById('experience').scrollIntoView();">Experience</a></li>
-                                <li><a onClick="document.getElementById('contact').scrollIntoView();">Contact Me</a></li>
+                                <!-- <li><a onClick="document.getElementById('contact').scrollIntoView();">Contact Me</a></li> -->
                                 <!-- <li><a href="elements.html">Elements</a></li> -->
                             </ul>
                         </div>
@@ -83,21 +83,91 @@
             <h5>>Hello!👋</h5>
             <p>Currently:</p>
             <div class="col-6 col-12-medium">
-                <ul>
+                <ul class="alt">
                     <li>🎓 2nd Year Computer Science Student at The University of Manchester</li>
                     <li>👨‍💼 Employee at the University - IT Support Agent for Hornet</li>
                     <li>🎨 Self-Employed Freelance Visual Artist</li>
                 </ul>
             </div>
-            <ul class="icons major">
+            <a href="/assets/content/cv.pdf" class="button primary fit">View CV/Résumé</a>
+            <!-- <ul class="icons major">
                 <li><span class="icon fa-gem major style1"><span class="label"></span></span>
                 </li>
                 <li><span class="icon fa-heart major style2"><span class="label"></span></span>
                 </li>
                 <li><span class="icon solid fa-code major style3"><span class="label"></span></span>
                 </li>
-            </ul>
+            </ul> -->
     </div>
+    </section>
+
+    <!-- experience -->
+    <section id="experience" class="wrapper special style5">
+        <div class="inner">
+            <header>
+                <h2>Experience</h2>
+                <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+            </header>
+        </div>
+
+        <section>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Role</th>
+                            <th>Responsibilties</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>University of Manchester</td>
+                            <td>IT Network Support</td>
+                            <td>
+                                <ul>
+                                    <li>Operated a support helpdesk assisting hundreds of users with network issues</li>
+                                    <li>Constructed multiple clusters of Windows machines and initialised them onto the network</li>
+                                </ul>
+                            </td>
+                            <td>Sep 2018 - Present</td>
+                        </tr>
+                        <tr>
+                            <td>Freelance Visual Creative</td>
+                            <td>Photo & Videographer + Motion Graphics Artist</td>
+                            <td>
+                                <ul>
+                                    <li>Created & marketed commercial audio-visual content for clients using Adobe Suite; 250,000+ impressions </li>
+                                </ul>
+                            </td>
+                            <td>Aug 2018 - Present</td>
+                        </tr>
+                        <tr>
+                            <td>Fremantle UK, TV Production Studio</td>
+                            <td>Post-Production Runner</td>
+                            <td>
+                                <ul>
+                                    <li>Logged hundreds of footage reels for a large-scale TV production under intense deadline pressure</li>
+                                    <li>Provided hospitality for clients and performed admin tasks</li>
+                                </ul>
+                            </td>
+                            <td>Sep 2018 - Present</td>
+                        </tr>
+                        <tr>
+                            <td>MUFG Bank of Tokyo Mitsubishi, Investment Bank</td>
+                            <td>Summer Internship</td>
+                            <td>
+                                <ul>
+                                    <li>Lead a group to design a mobile app; won an investment prize against 10 competing groups</li>
+                                </ul>
+                            </td>
+                            <td>Aug 2018 - Present</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </section>
 
     <!-- projects -->
@@ -109,7 +179,7 @@
 
 
             <section class="spotlight">
-                <div class="image"><img src="images/pic01.jpg" alt="" /></div>
+                <div class="image"><img src="images/uompodcast.png" alt="" /></div>
                 <div class="content">
                     <h2>UoM_podcast</h2>
                     <p>A chrome <b>extension</b> that enhances the University's default podcast player.<br>
@@ -122,7 +192,7 @@
                 </div>
             </section>
             <section class="spotlight">
-                <div class="image"><img src="images/pic02.jpg" alt="" /></div>
+                <div class="image"><img src="images/rtx.png" alt="" /></div>
                 <div class="content">
                     <h2>rtx-voice-script</h2>
                     <p>A python script which uses <b>Python</b> & NVIDIA’s AI tech to remove background noise/music from an audio file.<br>
@@ -133,7 +203,7 @@
                 </div>
             </section>
             <section class="spotlight">
-                <div class="image"><img src="images/pic03.jpg" alt="" /></div>
+                <div class="image"><img src="images/fitmein.png" alt="" /></div>
                 <div class="content">
                     <h2>FitMeIn</h2>
                     <p> A web app written in <b>HTML</b> & <b>JavaScript</b> that organises calendar events based on real-time traffic & availability. Created as a university project.<br>
@@ -154,7 +224,7 @@
             <header class="major">
                 <h2>Programming Experience</h2>
                 <p>
-                    <blockquote>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</blockquote> – Martin Fowler</p>
+                    <blockquote>“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”</blockquote> <i>– Martin Fowler</i></p>
             </header>
             <ul class="features">
 
@@ -229,65 +299,10 @@
     </section> -->
 
 
-    <!-- experience -->
-    <section id="experience" class="wrapper special style5">
-        <div class="inner">
-            <header>
-                <h2>Experience</h2>
-                <p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
-            </header>
-        </div>
 
-        <section>
-            <div class="table-wrapper">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Company</th>
-                            <th>Role</th>
-                            <th>Responsibilties</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Item One</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Two</td>
-                            <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                            <td>19.99</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Three</td>
-                            <td> Morbi faucibus arcu accumsan lorem.</td>
-                            <td>29.99</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Four</td>
-                            <td>Vitae integer tempus condimentum.</td>
-                            <td>19.99</td>
-                            <td>29.99</td>
-                        </tr>
-                        <tr>
-                            <td>Item Five</td>
-                            <td>Ante turpis integer aliquet porttitor.</td>
-                            <td>29.99</td>
-                            <td>29.99</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    </section>
 
     <!-- contact -->
-    <section id="contact" class="wrapper special style3">
+    <!-- <section id="contact" class="wrapper special style3">
         <div class="inner">
             <header>
                 <h2>Contact</h2>
@@ -346,7 +361,7 @@
                 </div>
             </form>
         </section>
-    </section>
+    </section> -->
 
 
     <!-- Footer -->
