@@ -2193,6 +2193,7 @@ table tbody tr {
     border: solid 1px #fff;
     border-left: 0;
     border-right: 0;
+    font-size: 0.8em;
 }
 
 table tbody tr:nth-child(2n+1) {
@@ -2205,10 +2206,10 @@ table td {
 
 table th {
     color: #fff;
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
-    text-align: left;
+    text-align: center;
 }
 
 table thead {
