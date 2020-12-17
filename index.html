@@ -29,9 +29,11 @@
                         <div id="menu">
                             <ul>
                                 <li><a href="index.html">Home</a></li>
-                                <li><a href="generic.html">About Me</a></li>
-                                <li><a href="generic.html">Projects</a></li>
-                                <li><a href="generic.html">Contact Me</a></li>
+                                <li><a onClick="document.getElementById('about_me').scrollIntoView();">About Me</a></li>
+                                <li><a onClick="document.getElementById('projects').scrollIntoView();">Projects</a></li>
+                                <li><a onClick="document.getElementById('programming').scrollIntoView();">Programming</a></li>
+                                <li><a onClick="document.getElementById('experience').scrollIntoView();">Experience</a></li>
+                                <li><a onClick="document.getElementById('contact').scrollIntoView();">Contact Me</a></li>
                                 <!-- <li><a href="elements.html">Elements</a></li> -->
                             </ul>
                         </div>
@@ -49,7 +51,13 @@
 
                 </p>
                 <ul class="actions special">
-                    <li><a onClick="document.getElementById('one').scrollIntoView();" class="button primary">Learn More</a></li>
+                    <li><a onClick="document.getElementById('about_me').scrollIntoView();" class="button primary">Learn More</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://linkedin.com/in/amirmaula" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="https://github.com/amirmaula" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="https://instagram.com/vbkoala" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:amirmaula@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                 </ul>
                 <!-- <div id='splinecontainer' class="canvas-background-3d">
 
@@ -65,8 +73,8 @@
             <a href="#one" class="more scrolly">Scroll</a>
         </section>
 
-        <!-- One -->
-        <section id="one" class="wrapper style1 special">
+        <!-- about_me -->
+        <section id="about_me" class="wrapper  special">
             <div class="inner"></div>
             <header class="major">
                 <h3>About Me</h3>
@@ -95,55 +103,56 @@
     </div>
     </section>
 
-    <!-- Two -->
-    <section id="two" class="wrapper style3">
+    <!-- projects -->
+    <section id="projects" class="wrapper style3 special">
         <div class="inner">
             <header class="major">
                 <h2>Projects</h2>
             </header>
+
+
+            <section class="spotlight">
+                <div class="image"><img src="images/pic01.jpg" alt="" /></div>
+                <div class="content">
+                    <h2>UoM_podcast</h2>
+                    <p>A chrome <b>extension</b> that enhances the University's default podcast player.<br>
+                        <br> Found on the <a href="https://chrome.google.com/webstore/detail/uom-podcast-pause-screen/jpehogmaddbcdplejmhoghighfkfnjgo/related?hl=en-GB&authuser=0"> Chrome Web Store</a> and <a href="https://github.com/amirmaula/uom_podcast"> GitHub</a>                        <br><br>
+                        <i>Rated 5 stars; 100+ users</i><br>
+                        <i>Nov 2020</i>
+                    </p>
+
+
+                </div>
+            </section>
+            <section class="spotlight">
+                <div class="image"><img src="images/pic02.jpg" alt="" /></div>
+                <div class="content">
+                    <h2>rtx-voice-script</h2>
+                    <p>A python script which uses <b>Python</b> & NVIDIA’s AI tech to remove background noise/music from an audio file.<br>
+                        <br> Found on <a href="https://github.com/amirmaula/rtx-voice-script"> GitHub</a> <br><br>
+                        <i>2000+ hits</i><br>
+                        <i>Aug 2020</i>
+                    </p>
+                </div>
+            </section>
+            <section class="spotlight">
+                <div class="image"><img src="images/pic03.jpg" alt="" /></div>
+                <div class="content">
+                    <h2>FitMeIn</h2>
+                    <p> A web app written in <b>HTML</b> & <b>JavaScript</b> that organises calendar events based on real-time traffic & availability.<br>
+                        <br> Found on <a href="https://github.com/amirmaula/fitmein"> GitHub</a> <br><br>
+                        <i>Graded 92/100 & Promoted by the University</i><br>
+                        <i>Dec 2019 - Mar 2020</i><br>
+                        <sub><i>Web App link was removed due to university hosting restrictions</i></sub>
+
+                    </p>
+                </div>
+            </section>
         </div>
-
-        <section class="spotlight">
-            <div class="image"><img src="images/pic01.jpg" alt="" /></div>
-            <div class="content">
-                <h2>UoM_podcast</h2>
-                <p>A chrome <b>extension</b> that enhances the University's default podcast player.<br>
-                    <br> Found on the <a href="https://chrome.google.com/webstore/detail/uom-podcast-pause-screen/jpehogmaddbcdplejmhoghighfkfnjgo/related?hl=en-GB&authuser=0"> Chrome Web Store</a> and <a href="https://github.com/amirmaula/uom_podcast"> GitHub</a>                    <br><br>
-                    <i>Rated 5 stars; 100+ users</i><br>
-                    <i>Nov 2020</i>
-                </p>
-
-
-            </div>
-        </section>
-        <section class="spotlight">
-            <div class="image"><img src="images/pic02.jpg" alt="" /></div>
-            <div class="content">
-                <h2>rtx-voice-script</h2>
-                <p>A python script which uses <b>Python</b> & NVIDIA’s AI tech to remove background noise/music from an audio file.<br>
-                    <br> Found on <a href="https://github.com/amirmaula/rtx-voice-script"> GitHub</a> <br><br>
-                    <i>2000+ hits</i><br>
-                    <i>Aug 2020</i>
-                </p>
-            </div>
-        </section>
-        <section class="spotlight">
-            <div class="image"><img src="images/pic03.jpg" alt="" /></div>
-            <div class="content">
-                <h2>FitMeIn</h2>
-                <p> A web app written in <b>HTML</b> & <b>JavaScript</b> that organises calendar events based on real-time traffic & availability.<br>
-                    <br> Found on <a href="https://github.com/amirmaula/fitmein"> GitHub</a> <br><br>
-                    <i>Graded 92/100 & Promoted by the University</i><br>
-                    <i>Dec 2019 - Mar 2020</i><br>
-                    <sub><i>Web App link was removed due to university hosting restrictions</i></sub>
-
-                </p>
-            </div>
-        </section>
     </section>
 
-    <!-- Three -->
-    <section id="three" class="wrapper style3 special">
+    <!-- programming -->
+    <section id="programming" class="wrapper style4 special">
         <div class="inner">
             <header class="major">
                 <h2>Programming</h2>
@@ -180,8 +189,8 @@
         </div>
     </section>
 
-    <!-- Four -->
-    <section id="four" class="wrapper style4 special">
+    <!-- visuals -->
+    <section id="visuals" class="wrapper style3 special">
         <div class="inner">
             <header class="major">
                 <h2>Visual Arts</h2>
@@ -236,15 +245,14 @@
     <!-- Footer -->
     <footer id="footer">
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-            <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-            <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            <li><a href="https://linkedin.com/in/amirmaula" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            <li><a href="https://github.com/amirmaula" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="https://instagram.com/vbkoala" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="mailto:amirmaula@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
         </ul>
         <ul class="copyright">
-            <li>&copy; Untitled</li>
-            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            <li>&copy; Amir Maula 2020</li>
+            <!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
         </ul>
     </footer>
 
