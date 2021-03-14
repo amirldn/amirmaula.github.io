@@ -266,6 +266,9 @@
 })()
 
 function recaptchaCallback() {
-  document.getElementById("CAPTCHA" ).style.display = "none";  
-  document.getElementById("phoneNo").style.visibility = "visible";
+  document.getElementById("CAPTCHAform" ).style.display = "none";  
+  document.getElementById("CAPTCHAwarningPhone" ).style.display = "none";  
+  document.getElementById("CAPTCHAwarningEmail" ).style.display = "none";  
+  document.getElementById("phoneNo").style.display = "initial";
+  document.getElementById("emailAddr").style.display = "initial";
 };
