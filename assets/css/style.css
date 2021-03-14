@@ -328,6 +328,55 @@ h1, h2, h3, h4, h5, h6 {
   color: #3A0CA3;
 }
 
+#hero .scrollIcon {
+  bottom: 0;
+  padding-bottom: 20px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  text-transform: uppercase;
+  height: 8.5em;
+
+}
+
+#hero .more {
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  border: none;
+  bottom: 0;
+  color: inherit;
+  font-size: 0.8em;
+  height: 8.5em;
+  left: 50%;
+  letter-spacing: 0.225em;
+  margin-left: -8.5em;
+  opacity: 1;
+  outline: 0;
+  padding-left: 0.225em;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  width: 16em;
+  z-index: 1;
+}
+
+#hero .more:after {
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 4em;
+  content: '';
+  display: block;
+  height: 1.5em;
+  left: 50%;
+  margin: 0 0 0 -0.75em;
+  position: absolute;
+  width: 1.5em;
+}
+
 @media (max-width: 992px) {
   #hero {
     text-align: center;
@@ -341,7 +390,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     line-height: 24px;
   }
+  #hero .more {
+    display: none;
 }
+#hero .scrollIcon {
+  display: none;
+}
+}
+
+
 
 /*--------------------------------------------------------------
 # Sections General
