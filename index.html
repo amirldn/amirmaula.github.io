@@ -98,6 +98,11 @@
             >
           </li>
           <li>
+            <a href="#creative" class="nav-link scrollto"
+              ><i class='bx bx-video-recording'></i> <span>Creative</span></a
+            >
+          </li>
+          <li>
             <a href="#contact" class="nav-link scrollto"
               ><i class="bx bx-envelope"></i> <span>Contact</span></a
             >
@@ -961,15 +966,24 @@
             </p>
           </div>
 
+          <!-- Video embeds -->
           <div class="container">
+            <div class="container text-center" data-aos="fade-up">
+              <h2>Music Videos</h2>
+              <p>
+                Here are the music videos I've created for clients in which I have filmed, directed as well as edited using nothing but my small DSLR & personal computer.
+              </p>
+            </div>
+            <br />
+
+            <!-- Rain -->
             <div class="row">
-              <div class="col-md-3 align-self-center" data-aos="fade-right">
+              <div class="col-md-3 align-self-center" data-aos="fade-left">
                 <h1><b>Rain</b></h1>
                 <h3><small class="text-muted">C22</small></h3>
                 <p>Official Music Video</p>
                 <p>
-                  For this project, I managed a small team to direct, edit &
-                  publish a music video for the song Rain by C22.
+                  For this project, I managed a small team to film, direct & edit a music video for the song Rain by C22.
                 </p>
                 <p>
                   <small class="text-muted"
@@ -980,16 +994,39 @@
               </div>
               <div
                 class="container video col-md"
-                data-aos="fade-left"
+                data-aos="fade-right"
                 data-aos-delay="250"
               >
-                <iframe
-                  class="responsive-iframe"
-                  src="https://www.youtube.com/embed/ijR0qD-f8Lw"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              <iframe class="responsive-iframe" src="https://www.youtube.com/embed/ijR0qD-f8Lw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Phantom Freestyle -->
+            <div class="row">
+              <div
+              class="container video col-md"
+              data-aos="fade-left"
+              data-aos-delay="250"
+            >
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/bnCpj82jr6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="col-md-3 align-self-center" data-aos="fade-right">
+                <h1><b>Phantom Freestyle</b></h1>
+                <h3><small class="text-muted">Antzn & C22</small></h3>
+                <p>Official Music Video</p>
+                <p>
+                  This was my first music video I filmed, directed & edited for a client duo wanting visuals to go with their debut freestyle.
+                </p>
+                <p>
+                  <small class="text-muted"
+                    >Warning: This video contains strong langauge & flashing
+                    images.</small
+                  >
+                </p>
+              </div>
+
             </div>
           </div>
 
@@ -1178,8 +1215,8 @@
               </div>
             </div>
           </div> -->
-          <div class="container text-center" data-aos="flip-down">
-            <h2>Creative Portfolio</h2>
+          <div class="container text-center" data-aos="fade-up">
+            <h2>Instagram Portfolio</h2>
             <p>
               I post my work to a public Instagram page which can be found
               <a href="http://www.instagram.com/vbkoala">here</a>. Here is a
@@ -1196,14 +1233,15 @@
               };
             </script>
             <script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+            <div class="container text-center" data-aos="fade-up">
+              <p>
+                <a href="https://instagram.com/vbkoala">
+                  View more on Instagram</a>
+              </p>
+            </div>
           </div>
 
-          <div class="container text-center" data-aos="flip-down">
-            <p>
-              <a href="https://instagram.com/vbkoala">
-                View more on Instagram</a>
-            </p>
-          </div>
+          
         </div>
       </section>
       <!-- End creative Section -->
@@ -1358,7 +1396,11 @@
                 <div class="phone">
                   <i class="bi bi-phone"></i>
                   <h4>Call:</h4>
-                  <p>+447547707900 - business inquiries only</p>
+                  <form id="CAPTCHA" onsubmit="return displayNumber()">
+                    <p>CAPTCHA required to view number</p>
+                    <div class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LcPN38aAAAAAEng-S7MN9cfouAR7J8GY_wizFOr"></div>
+                  </form>
+                  <div id="phoneNo" style="visibility:hidden"><a href="tel:+447547707900">+447547707900</a> - business inquires only</div>
                 </div>
               </div>
             </div>
@@ -1419,13 +1461,36 @@
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Send Message</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Contact - Message Not Sent</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>Thank you for reaching out.</h3>
+        <p>Unfortunately the contact section has not yet been setup so instead, please contact me via my email.</p>
+        <p><a href="mailto:amirmaula@outlook.com">amirmaula@outlook.com</a></p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
       <!-- End Contact Section -->
     </main>
     <!-- End #main -->
@@ -1494,6 +1559,7 @@
       integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script
       type="text/javascript"
       src="https://www.freevisitorcounters.com/en/home/counter/803342/t/2"
