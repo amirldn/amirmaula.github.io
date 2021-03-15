@@ -1298,3 +1298,8 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+#footer .credits .visitCounter {
+  font-size: 13px;
+  padding-top: 100px;
+}
